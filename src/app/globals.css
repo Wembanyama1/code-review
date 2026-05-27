@@ -172,7 +172,33 @@
    ══════════════════════════════════════════════ */
 
 @media print {
-  body { background: white !important; color: #111 !important; }
+  body { background: white !important; color: #111 !important; font-size: 12px; }
   .print\:hidden { display: none !important; }
   * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  main { padding: 0 !important; }
+
+  /* stat cards */
+  [class*="rounded-2xl"] { border-color: #e5e7eb !important; background: #fafafa !important; }
+  [class*="text-red-400"] { color: #dc2626 !important; }
+  [class*="text-amber-400"] { color: #d97706 !important; }
+  [class*="text-emerald-400"] { color: #059669 !important; }
+  [class*="text-indigo-400"] { color: #4f46e5 !important; }
+  [class*="text-zinc-300"] { color: #374151 !important; }
+  [class*="text-zinc-400"] { color: #4b5563 !important; }
+  [class*="text-zinc-600"] { color: #6b7280 !important; }
+  [class*="text-zinc-700"] { color: #9ca3af !important; }
+  [class*="text-zinc-800"] { color: #d1d5db !important; }
+  [class*="bg-\[#111118\]"] { background: #ffffff !important; }
+  [class*="bg-white\/\[0\.02\]"] { background: #f9fafb !important; }
+  [class*="border-white\/\[0\.06\]"] { border-color: #e5e7eb !important; }
+  [class*="border-white\/\[0\.04\]"] { border-color: #f3f4f6 !important; }
+  [class*="bg-indigo-500\/10"] { background: #eef2ff !important; }
+  [class*="bg-red-500\/10"] { background: #fef2f2 !important; }
+  [class*="bg-amber-500\/10"] { background: #fffbeb !important; }
+  [class*="bg-emerald-500\/10"] { background: #ecfdf5 !important; }
+  [class*="bg-zinc-500\/10"] { background: #f3f4f6 !important; }
+
+  /* page breaks */
+  h2, h3 { page-break-after: avoid; }
+  [class*="rounded-2xl"][class*="border"] { page-break-inside: avoid; }
 }
