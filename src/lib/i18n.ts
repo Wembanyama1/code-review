@@ -72,7 +72,7 @@ export const translations: Record<Lang, Record<string, string>> = {
 
   zh: {
     "hero.pill": "AI 驱动的代码审查",
-    "hero.title1": "更安全的代码，",
+    "hero.title1": "更安全的代码",
     "hero.title2": "更快地交付",
     "hero.subtitle": "粘贴 GitHub 仓库或代码片段，即刻获取安全审计、逻辑检查和修复建议。",
     "input.repo": "GitHub 仓库",
